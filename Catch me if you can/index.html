@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>Catch me if you can</title>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-name">
+            <p>Chat</p>
+        </div>
+        <div>
+            <ul id = "chat"></ul>
+        </div>
+        <div class="chat-message">
+            <form onsubmit = "return false;">
+                Name: <br>
+                <input type = "text" id = "user"/>
+            </form>
+            <form onsubmit = "addMessage(); return false;">
+                Message: <br>
+                <input type = "text" id = "message" placeholder="Press 'Enter' to send message"/>
+            </form>
+        </div>
+    </div>
+    <div id="map"></div>
+    <script src="script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARkS-dsh-7IirtcQg3oSZEHudV6Uw9Iic&callback=initMap" async defer></script>
+</body>
+</html>
